@@ -4,7 +4,9 @@ const nextConfig = {
   swcMinify: true,
   output: 'standalone',
   staticPageGenerationTimeout: 180,
-  turbopack: {},
+  webpack: (config) => {
+    return config;
+  },
 };
 
 export default nextConfig;
